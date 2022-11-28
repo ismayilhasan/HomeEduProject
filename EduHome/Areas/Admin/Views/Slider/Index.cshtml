@@ -1,0 +1,42 @@
+﻿@using EduHome.Models.Entities
+@model List<Slider>
+
+<row>
+    <div class="col-lg-9 col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Slider</h4>
+             
+                <div class="table-responsive">
+                    <table class="table">
+                        <a class="btn btn-primary text-white">Create</a>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Actions</th>
+                                <th>Created</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           @foreach (var slider in Model)
+                           {
+                                <tr>
+                                    <td><img style="object-fit:contain; width:80px; height:80px" src="@slider.ImageUrl"/></td>
+                                    <td>
+                                        <a class="btn btn-primary text-white">Details</a>
+                                        <a class="btn btn-success text-white">Update</a>
+                                        <a class="btn btn-danger text-white">Delete</a>
+                                    </td>
+                                    <td>12 May 2017</td>
+                                    <td><label class="badge badge-danger">Pending</label></td>
+                                </tr>
+                            }
+                    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</row>
