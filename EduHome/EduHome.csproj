@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Data\" />
+    <Content Remove="wwwroot\admin\images\SliderController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Areas\Admin\Data\Constants.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,3 +1,4 @@
+using EduHome.Areas.Admin.Data;
 using EduHome.DAL;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,8 @@ namespace EduHome
             builder.Services.AddDbContext<AppDbContext>(
                     opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            Constants.RootPath = builder.Environment.WebRootPath;
+            Constants.SliderPath = Path.Combine(Constants.RootPath, "assets", "img", "slider");
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -22,10 +22,10 @@
                            @foreach (var slider in Model)
                            {
                                 <tr>
-                                    <td><img style="object-fit:contain; width:80px; height:80px" src="@slider.ImageUrl"/></td>
+                                    <td><img style="object-fit:contain; width:80px; height:80px" src="~/assets/img/slider/@slider.ImageUrl"/></td>
                                     <td>
                                         <a class="btn btn-primary text-white">Details</a>
-                                        <a class="btn btn-success text-white">Update</a>
+                                        <a asp-controller="Slider" asp-action="Update" asp-route-id="@slider.Id" class="btn btn-success text-white">Update</a>
                                         <a class="btn btn-danger text-white">Delete</a>
                                     </td>
                                     <td>12 May 2017</td>
