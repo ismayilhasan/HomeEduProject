@@ -4,8 +4,7 @@ using EduHome.DAL;
 using EduHome.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Drawing.Printing;
-using System.Security.Cryptography.X509Certificates;
+
 
 namespace EduHome.Areas.Admin.Controllers
 {
@@ -41,7 +40,7 @@ namespace EduHome.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public async Task<IActionResult> Create(SliderUpdateViewModel model)
+        public async Task<IActionResult> Create(SliderCreateViewModel model)
         {
             if(!ModelState.IsValid)
             {
@@ -86,7 +85,11 @@ namespace EduHome.Areas.Admin.Controllers
 
             var sliderItem = await _dbContext.Sliders.FindAsync(id);
             return View(new SliderUpdateViewModel { 
-                ImageUrl = sliderItem.ImageUrl
+                ImageUrl = sliderItem.ImageUrl,
+                Title = sliderItem.Title,
+                Subtitle = sliderItem.Subtitle,
+                ButtonText=sliderItem.ButtonText
+                
             });
 
 
@@ -94,69 +97,89 @@ namespace EduHome.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int? id, SliderUpdateViewModel model)
+        public async Task<IActionResult> Update(int? id,SliderUpdateViewModel model)
         {
-            if (id is null) return NotFound();
+            if (id == null) return NotFound();
 
-            var sliderItem = await _dbContext.Sliders.Where(x => x.Id == id).FirstOrDefaultAsync();
+            var sliderItem = await _dbContext.Sliders.FindAsync(id);
 
-            if (sliderItem is null) return NotFound();
+            if(sliderItem == null) return NotFound();
 
-            if (sliderItem.Id != id) return BadRequest();
+            if (sliderItem.Id == null)
+               return BadRequest();
 
-            if (model.Image != null)
+            if(!ModelState.IsValid)
             {
+                return View(new SliderUpdateViewModel { 
+                     ImageUrl = model.ImageUrl
+                });
 
-                if (!ModelState.IsValid)
-                {
-                    return View(new SliderUpdateViewModel
-                    {
-
-                        ImageUrl = sliderItem.ImageUrl,
-
-                    });
-                }
-
-                if (!model.Image.IsImage())
-                {
-                    ModelState.AddModelError("Image", "Sekil secilmelidir");
-                    return View(new SliderUpdateViewModel
-                    {
-
-                        ImageUrl = sliderItem.ImageUrl,
-
-                    });
-                }
-                if (!model.Image.IsAllowedSize(2))
-                {
-                    ModelState.AddModelError("Image", "Sekil secilmelidir");
-                    return View(new SliderUpdateViewModel
-                    {
-
-                        ImageUrl = sliderItem.ImageUrl,
-
-                    });
-                }
-
-
-
-                var path = Path.Combine(Constants.SliderPath, "img", "slider", sliderItem.ImageUrl);
-
-                if (System.IO.File.Exists(path))
-                    System.IO.File.Delete(path);
-
-                var unicalFileName = await model.Image.GenerateFile(Constants.SliderPath);
-                sliderItem.ImageUrl = unicalFileName;
             }
+            if (!model.Image.IsImage())
+            {
+                ModelState.AddModelError("Image", "Please Enter Image");
+                return View(new SliderUpdateViewModel
+                {
+                    ImageUrl = model.ImageUrl
+                });
+            }
+
+            if (!model.Image.IsAllowedSize(2))
+            {
+                ModelState.AddModelError("Image", "Image Size can Contain max 1 mb");
+                return View(new SliderUpdateViewModel
+                {
+                    ImageUrl = model.ImageUrl
+                });
+            }
+
+            var path = Path.Combine(Constants.RootPath, "img", sliderItem.ImageUrl);
+
+
+
+
+            if (System.IO.File.Exists(path))
+                System.IO.File.Delete(path);
+
+            var unicalFileName = await model.Image.GenerateFile(Constants.SliderPath);
+
+
+            sliderItem.ImageUrl = unicalFileName;
             sliderItem.Subtitle = model.Subtitle;
             sliderItem.Title = model.Title;
             sliderItem.ButtonText = model.ButtonText;
-            sliderItem.ButtonSrc = "testr";
 
 
             await _dbContext.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
+        }
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) return NotFound();
+
+            var sliderItem = await _dbContext.Sliders.FindAsync(id);
+
+            if(sliderItem.Id == null)  BadRequest();
+
+
+            var path = Path.Combine(Constants.RootPath,"img",sliderItem.ImageUrl);
+
+            if (System.IO.File.Exists(path))
+                System.IO.File.Delete(path);
+
+            _dbContext.Sliders.Remove(sliderItem);
+
+            await _dbContext.SaveChangesAsync();
+
+
+            return RedirectToAction(nameof(Index)); 
+
         }
 
 

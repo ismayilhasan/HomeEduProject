@@ -2,7 +2,7 @@
 {
     public class SliderUpdateViewModel
     {
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; set; } = String.Empty;
         public IFormFile Image { get; set; }
 
         public string Title { get; set; }
