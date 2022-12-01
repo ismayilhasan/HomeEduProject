@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/rYB8ektqZZYgUWARo2O1Fuq3GFOfd2hGXRHa2OnzuM=",
+  "Hash": "44KvH/8fLl4eCFr6QB3Zfq+BDi34A6SER+61Sc/hNcw=",
   "Source": "EduHome",
   "BasePath": "_content/EduHome",
   "Mode": "Default",
@@ -3177,6 +3177,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\blog-img.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\wwwroot\\assets\\img\\blog\\cfaad466-b751-48fd-a8ec-ee96886e4515-teacher1.jpg",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/blog/cfaad466-b751-48fd-a8ec-ee96886e4515-teacher1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\cfaad466-b751-48fd-a8ec-ee96886e4515-teacher1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\wwwroot\\assets\\img\\blog\\fa21383b-00b0-46d8-870e-6bc66e074303-teacher2.webp",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/blog/fa21383b-00b0-46d8-870e-6bc66e074303-teacher2.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\fa21383b-00b0-46d8-870e-6bc66e074303-teacher2.webp"
     },
     {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\wwwroot\\assets\\img\\choose\\choose.png",

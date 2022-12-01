@@ -1,0 +1,34 @@
+﻿@model Blog
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Teacher Details</h4>
+
+                <img src="~/assets/img/blog/@Model.ImageUrl" />
+                <div class="form-group">
+                    <label asp-for="Title">Title</label>
+                    <input asp-for="Title" class="form-control" disabled accept="image/*">
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="Author">Author</label>
+                    <input asp-for="Author" class="form-control" disabled accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description">Description</label>
+                    <input asp-for="Description" class="form-control" disabled accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Created">Created</label>
+                    <input asp-for="Created" class="form-control" disabled accept="image/*">
+                </div>
+              
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

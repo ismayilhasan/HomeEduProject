@@ -1,0 +1,44 @@
+﻿@model List<Blog>
+
+<row>
+    <div class="col-lg-9 col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Blogs</h4>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <a asp-controller="Blog" asp-action="Create" class="btn btn-primary text-white">Create</a>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Actions</th>
+                                <th>Created</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var blog in Model)
+                            {
+                                <tr>
+                                    <td><img style="object-fit:contain; width:80px; height:80px" src="~/assets/img/blog/@blog.ImageUrl" /></td>
+                                    <td>
+                                        <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.Id" class="btn btn-primary text-white">Details</a>
+                                        <a asp-controller="Blog" asp-action="Update" asp-route-id="@blog.Id" class="btn btn-success text-white">Update</a>
+                                        <form class="forms-sample" method="post" asp-action="Delete" asp-route-id="@blog.Id">
+                                            <button type="submit" class="btn btn-danger mr-2" asp-action="Delete" asp-route-id="@blog.Id">Delete</button>
+                                        </form>
+
+                                    </td>
+                                    <td>@blog.Created</td>
+                                    <td><label class="badge badge-danger">Pending</label></td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</row>

@@ -1,13 +1,12 @@
-﻿namespace EduHome.Models.Entities
+﻿namespace EduHome.Areas.Admin.Models
 {
-    public class Blog : Entity
+    public class BlogUpdateViewModel
     {
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; set; } = String.Empty;
+        public IFormFile Image { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
         public DateTime Created { get; set; }
         public string Description { get; set; }
-
-        public bool IsDeleted { get; set; }
     }
 }
