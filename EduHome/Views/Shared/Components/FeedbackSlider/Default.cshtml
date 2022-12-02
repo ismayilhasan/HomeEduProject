@@ -1,0 +1,23 @@
+﻿@using EduHome.Models.Entities
+@model List<FeedbackSlider>
+@{
+    List<FeedbackSlider> Sliders = Model;
+}
+
+@foreach (var slider in Sliders)
+{
+    <div class="col-md-8 col-md-offset-2 col-sm-12">
+        <div class="single-testimonial">
+            <div class="testimonial-info">
+                <div class="testimonial-img">
+                    <img src="~/assets/img/testimonial/@slider.ImageUrl" alt="testimonial">
+                </div>
+                <div class="testimonial-content">
+                    <p>@slider.Feedback</p>
+                    <h4>@slider.Name</h4>
+                    <h5>@slider.Position</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+}
