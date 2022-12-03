@@ -7,6 +7,6 @@
         public static string TeacherPath;
         public static string BlogPath;
         public static string FeedbackPath;
-
+        public static string CoursePath;
     }
 }

@@ -9855,11 +9855,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\EduHome.csproj",
+      "projectUniqueName": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\EduHome.csproj",
       "projectName": "EduHome",
-      "projectPath": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\EduHome.csproj",
+      "projectPath": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\EduHome.csproj",
       "packagesPath": "C:\\Users\\Ismayil Hasanov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\obj\\",
+      "outputPath": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

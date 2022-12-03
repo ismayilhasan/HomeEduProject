@@ -20,6 +20,7 @@ namespace EduHome
             Constants.TeacherPath = Path.Combine(Constants.RootPath, "assets", "img", "teacher");
             Constants.BlogPath = Path.Combine(Constants.RootPath, "assets", "img", "blog");
             Constants.FeedbackPath = Path.Combine(Constants.RootPath, "assets", "img", "testimonial");
+            Constants.CoursePath = Path.Combine(Constants.RootPath, "assets", "img", "course");
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

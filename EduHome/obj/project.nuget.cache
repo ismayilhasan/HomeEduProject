@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qloKA9yXBcPsg0aAcnG81iUK2nMy3IB7KK++1Ge1YtdLR9FeaWMctUN3WPbEMlbpowd/Jp3zi8Ts4SUPxYs0uw==",
+  "dgSpecHash": "1Ug4XqpRIYb4X7cU16mlxNiFcB/jR55W2IaZBLFDLb1CnDBpfCOiAjP/eCR4983MB9J4NXIp4qX6beLf/MNIig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ismayil Hasanov\\Desktop\\ProjectFinal1\\EduHome\\EduHome.csproj",
+  "projectFilePath": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\EduHome.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ismayil Hasanov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ismayil Hasanov\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
