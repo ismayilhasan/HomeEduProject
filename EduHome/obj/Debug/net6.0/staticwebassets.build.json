@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "McLTCST9P98M54rgGyOcHqw+mj+QA0NaD+YmaJ0azfA=",
+  "Hash": "H2tC8NxnLlWt03VhfJVIVwDSeaK0x5fFPyvAa4Q35FQ=",
   "Source": "EduHome",
   "BasePath": "_content/EduHome",
   "Mode": "Default",
@@ -3604,6 +3604,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\event\\2eb14b86-8116-44b7-ba1d-757003321a3b-teacher2.webp"
     },
     {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\event\\3dea5376-874d-468b-a252-5ac67e6284e7-teacher1.jpg",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/event/3dea5376-874d-468b-a252-5ac67e6284e7-teacher1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\event\\3dea5376-874d-468b-a252-5ac67e6284e7-teacher1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\event\\event1.jpg",
       "SourceId": "EduHome",
       "SourceType": "Discovered",
@@ -3823,6 +3840,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\event\\event-details.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\event\\f0d568ed-1e88-4f93-99fd-0ef87702597d-teacher2.webp",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/event/f0d568ed-1e88-4f93-99fd-0ef87702597d-teacher2.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\event\\f0d568ed-1e88-4f93-99fd-0ef87702597d-teacher2.webp"
     },
     {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\event\\speaker1.jpg",

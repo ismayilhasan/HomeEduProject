@@ -33,5 +33,15 @@ namespace EduHome.Controllers
             };
             return View(courseViewModel);
         }
+
+        public IActionResult Search(string searchedText)
+        {
+            if(string.IsNullOrEmpty(searchedText))
+            {
+                return NoContent(); 
+            }
+            var courses = _dbContext.Courses.Where(x => x.Title.ToLower().Contains(searchedText.ToLower())).ToList();
+            return PartialView("_SearchedCoursePartial", courses);
+        }
     }
 }

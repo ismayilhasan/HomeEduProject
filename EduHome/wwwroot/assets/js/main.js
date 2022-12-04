@@ -125,6 +125,19 @@ $(".notice-left").niceScroll({
             cursorborder: "0px solid #fff",
             autohidemode: false,
             
+});
+
+    $(document).on('keyup', '#search', function () {
+        var searchedCourse = $(this).val()
+        $("#CoursesResults li").remove();
+        $.ajax({
+            url: "/course/search?searchedText=" + searchedCourse,
+            type: 'GET',
+            success: function (res) {
+                console.log(res);
+                $("#CoursesResults").append(res);
+            }
         });
+    })
 
 })(jQuery);	

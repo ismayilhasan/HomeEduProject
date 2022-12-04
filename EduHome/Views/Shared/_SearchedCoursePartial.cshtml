@@ -1,0 +1,11 @@
+﻿@using EduHome.Models.Entities
+@model List<Course>
+
+@foreach (var course in Model)
+{
+
+    <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id">
+        <li style="color:black; font-weight:bold;">@course.Title</li>
+     </a>
+
+}
