@@ -14,5 +14,7 @@ namespace EduHome.Models.Entities
         public string Venue { get; set; }
         public string Content { get; set; }
 
+        public List<EventSpeaker> EventSpeakers { get;set; }
+
     }
 }

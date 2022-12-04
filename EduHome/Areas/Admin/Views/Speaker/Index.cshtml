@@ -1,0 +1,43 @@
+﻿@model List<Speaker>
+
+<row>
+    <div class="col-lg-9 col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Speakers</h4>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <a asp-controller="Speaker" asp-action="Create" class="btn btn-primary text-white">Create</a>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Actions</th>
+                                <th>Created</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var speaker in Model)
+                            {
+                                <tr>
+                                    <td><img style="object-fit:contain; width:80px; height:80px" src="~/assets/img/event/@speaker.ImageUrl" /></td>
+                                    <td>
+                                        <a asp-controller="Speaker" asp-action="Details" asp-route-id="@speaker.Id" class="btn btn-primary text-white">Details</a>
+                                        <a asp-controller="Speaker" asp-action="Update" asp-route-id="@speaker.Id" class="btn btn-success text-white">Update</a>
+                                        <form class="forms-sample" method="post" asp-action="Delete" asp-route-id="@speaker.Id">
+                                            <button type="submit" class="btn btn-danger mr-2" asp-action="Delete" asp-route-id="@speaker.Id">Delete</button>
+                                        </form>
+
+                                    </td>
+                                 
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</row>

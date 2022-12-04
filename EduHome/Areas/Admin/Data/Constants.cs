@@ -8,5 +8,7 @@
         public static string BlogPath;
         public static string FeedbackPath;
         public static string CoursePath;
+        public static string SpeakerPath;
+        public static string EventPath;
     }
 }

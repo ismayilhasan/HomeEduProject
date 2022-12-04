@@ -396,7 +396,7 @@ namespace EduHome.Migrations
             modelBuilder.Entity("EduHome.Models.Entities.EventSpeaker", b =>
                 {
                     b.HasOne("EduHome.Models.Entities.Event", "Event")
-                        .WithMany()
+                        .WithMany("EventSpeakers")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -415,6 +415,11 @@ namespace EduHome.Migrations
             modelBuilder.Entity("EduHome.Models.Entities.Category", b =>
                 {
                     b.Navigation("Courses");
+                });
+
+            modelBuilder.Entity("EduHome.Models.Entities.Event", b =>
+                {
+                    b.Navigation("EventSpeakers");
                 });
 
             modelBuilder.Entity("EduHome.Models.Entities.Speaker", b =>
