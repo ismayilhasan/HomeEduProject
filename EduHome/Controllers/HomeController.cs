@@ -19,9 +19,11 @@ namespace EduHome.Controllers
         public IActionResult Index()
         {
             var sliders = _dbContext.Sliders.ToList();
+            var blogs = _dbContext.Blogs.ToList();
             var homeViewModel = new HomeViewModel()
             {
-                Sliders = sliders
+                Sliders = sliders,
+                Blogs = blogs
             };
 
             return View(homeViewModel);

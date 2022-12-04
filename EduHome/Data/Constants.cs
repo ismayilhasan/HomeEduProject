@@ -10,5 +10,8 @@
         public static string CoursePath;
         public static string SpeakerPath;
         public static string EventPath;
+
+        public const string AdminRole = "Admin";
+        public const string UserRole = "User";
     }
 }
