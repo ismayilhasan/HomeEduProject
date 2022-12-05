@@ -51,6 +51,14 @@ namespace EduHome
 
             var app = builder.Build();
 
+            using (var scope = app.Services.CreateScope())
+            {
+                var serviceProdvider = scope.ServiceProvider;
+
+                var dataIntializer = new DataInitilaizer(serviceProdvider);
+                await dataIntializer.SeedData();
+            };
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
@@ -61,14 +69,6 @@ namespace EduHome
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
-            //using (var scope = app.Services.CreateScope())
-            //{
-            //    var serviceProdvider = scope.ServiceProvider;
-
-            //    var dataIntializer = new DataInitilaizer(serviceProdvider);
-            //    await dataIntializer.SeedData();
-            //};
 
             app.UseRouting();
 
