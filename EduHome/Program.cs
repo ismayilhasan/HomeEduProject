@@ -24,6 +24,7 @@ namespace EduHome
             Constants.CoursePath = Path.Combine(Constants.RootPath, "assets", "img", "course");
          
             Constants.EventPath = Path.Combine(Constants.RootPath, "assets", "img", "event");
+      
 
             builder.Services
                 .AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration
