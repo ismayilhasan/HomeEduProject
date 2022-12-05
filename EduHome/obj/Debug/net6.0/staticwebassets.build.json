@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I3rmuFxyeAvqdiWGn7CRILpNIX8/41H8xgsRUfpPdCU=",
+  "Hash": "9YUBDIuoOyEmk2+Cjhf7y1dWvwTJZyKf5ICM6XgiF70=",
   "Source": "EduHome",
   "BasePath": "_content/EduHome",
   "Mode": "Default",
@@ -2992,6 +2992,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\banner\\banner.jpg"
     },
     {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\blog\\20b24c66-fb48-4a7a-9794-eae0cb217339-blog-detail.webp",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/blog/20b24c66-fb48-4a7a-9794-eae0cb217339-blog-detail.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\20b24c66-fb48-4a7a-9794-eae0cb217339-blog-detail.webp"
+    },
+    {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\blog\\4f5cf196-4625-4120-a496-de1b3dafb992-teacher1.jpg",
       "SourceId": "EduHome",
       "SourceType": "Discovered",
@@ -3347,6 +3364,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\contact\\contact3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\course\\10aeebec-874c-4509-a0e5-8eecdf638659-compboy.webp",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/course/10aeebec-874c-4509-a0e5-8eecdf638659-compboy.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\course\\10aeebec-874c-4509-a0e5-8eecdf638659-compboy.webp"
     },
     {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\course\\7b887817-3eed-406d-adbf-39275d632d7f-teacher2.webp",

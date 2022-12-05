@@ -20,10 +20,14 @@ namespace EduHome.Controllers
         {
             var sliders = _dbContext.Sliders.ToList();
             var blogs = _dbContext.Blogs.ToList();
+            var courses = _dbContext.Courses.ToList();
+            var events = _dbContext.Events.ToList();
             var homeViewModel = new HomeViewModel()
             {
                 Sliders = sliders,
-                Blogs = blogs
+                Blogs = blogs,
+                Courses = courses,
+                Events = events
             };
 
             return View(homeViewModel);
