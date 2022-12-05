@@ -56,7 +56,7 @@ namespace EduHome.Areas.Admin.Controllers
                 return View(model);
             }
 
-            var unicalFileName = await model.Image.GenerateFile(Constants.SpeakerPath);
+            var unicalFileName = await model.Image.GenerateFile(Constants.EventPath);
 
             var speaker = new Speaker
             {

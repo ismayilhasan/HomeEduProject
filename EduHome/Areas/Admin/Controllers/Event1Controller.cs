@@ -192,6 +192,8 @@ namespace EduHome.Areas.Admin.Controllers
                 ModelState.AddModelError("", "Başlama tarixi bitmə tarixindən əvvəl olmalıdı..!");
                 return View(model);
             }
+
+         
             var speakers = await _dbContext.Speakers.Where(s => !s.IsDeleted).ToListAsync();
             var speakerList = new List<SelectListItem>();
             speakers.ForEach(s => speakerList.Add(new SelectListItem(s.FullName, s.Id.ToString())));
