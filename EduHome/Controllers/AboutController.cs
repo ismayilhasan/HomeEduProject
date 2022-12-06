@@ -1,4 +1,5 @@
 ﻿using EduHome.DAL;
+using EduHome.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EduHome.Controllers
@@ -14,8 +15,14 @@ namespace EduHome.Controllers
 
         public IActionResult Index()
         {
-            var teachers = _dbContext.Teachers.Where(x => !x.IsDeleted).ToList();
-            return View(teachers);
+            var Teachers = _dbContext.Teachers.Where(x => !x.IsDeleted).ToList();
+            var Events = _dbContext.Events.Where(x => !x.IsDeleted).ToList();
+            var aboutViewModel = new AboutViewModel
+            {
+                teachers = Teachers,
+                events = Events
+            };
+            return View(aboutViewModel);
         }
     }
 }

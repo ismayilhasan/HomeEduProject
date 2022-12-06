@@ -6,6 +6,7 @@
 
     <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id">
         <li style="color:black; font-weight:bold;">@course.Title</li>
+        <li><img style="width:100px;height:100px;" src="~/assets/img/course/@course.ImageUrl" /></li>
      </a>
 
 }

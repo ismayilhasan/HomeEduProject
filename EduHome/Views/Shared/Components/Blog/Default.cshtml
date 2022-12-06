@@ -16,10 +16,10 @@
             </div>
             <div class="blog-content">
                 <div class="blog-top">
-                    <p>@blog.Author/@blog.Created.ToString("dddd, dd MMMM yyyy")  /  <i class="fa fa-comments-o"></i> 4</p>
+                    <p>@blog.Author/@blog.Created.ToString("dddd, MMMM yyyy")  /  <i class="fa fa-comments-o"></i> 4</p>
                 </div>
                 <div class="blog-bottom">
-                    <h2><a href="blog-details.html">@blog.Description </a></h2>
+                    <h2><a href="blog-details.html">@blog.Description.Substring(0,18)</a></h2>
                     <a asp-controller="blog" asp-action="details" asp-route-id="@blog.Id">read more</a>
                 </div>
             </div>

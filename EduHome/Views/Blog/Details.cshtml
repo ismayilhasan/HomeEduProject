@@ -1,6 +1,8 @@
 ﻿@using EduHome.Models.Entities
+@model BlogViewModel
 @{
-    Blog blog = Model;
+    var blog = Model.Blog;
+    var latesBlogs = Model.LatesBlogs;
 }
 <!-- Banner Area Start -->
 <div class="banner-area-wrapper">
@@ -91,48 +93,24 @@
                     </div>
                     <div class="single-blog-widget mb-47">
                         <h3>latest post</h3>
-                        <div class="single-post mb-30">
-                            <div class="single-post-img">
-                                <a href="blog-details.html">
-                                    <img src="~/assets/img/post/post1.jpg" alt="post">
-                                    <div class="blog-hover">
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
+                      @foreach (var item in latesBlogs)
+                      {
+                            <div  class="single-post mb-30">
+                                <div class="single-post-img">
+                                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">
+                                        <img asp-controller="Blog" asp-action="details" asp-route-id="@item.Id" style="width:95px; height:84px; object-fit:contain;" src="~/assets/img/blog/@item.ImageUrl" alt="post">
+                                        <div class="blog-hover">
+                                            <i class="fa fa-link"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="single-post-content">
+                                    <h4><a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></h4>
+                                    <p>@item.Author/@item.Created</p>
+                                </div>
                             </div>
-                            <div class="single-post-content">
-                                <h4><a href="blog-details.html">English Language Course for you</a></h4>
-                                <p>By Alex  /  June 20, 2017</p>
-                            </div>
-                        </div>
-                        <div class="single-post mb-30">
-                            <div class="single-post-img">
-                                <a href="blog-details.html">
-                                    <img src="~/assets/img/post/post2.jpg" alt="post">
-                                    <div class="blog-hover">
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="single-post-content">
-                                <h4><a href="blog-details.html">Advance Web Design and Develop</a></h4>
-                                <p>By Alex  /  June 20, 2017</p>
-                            </div>
-                        </div>
-                        <div class="single-post">
-                            <div class="single-post-img">
-                                <a href="blog-details.html">
-                                    <img src="~/assets/img/post/post3.jpg" alt="post">
-                                    <div class="blog-hover">
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="single-post-content">
-                                <h4><a href="blog-details.html">English Language Course for you</a></h4>
-                                <p>By Alex  /  June 20, 2017</p>
-                            </div>
-                        </div>
+                        }
+                    
                     </div>
                     <div class="single-blog-widget">
                         <h3>tags</h3>

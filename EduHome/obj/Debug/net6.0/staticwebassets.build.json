@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UuPW7j8fuDSqf01WASGtaLBFlafNPlAkqPqtwkdcWl0=",
+  "Hash": "Tipw30KmMT52cGApUqjjXKxLhi3+dsAwmJlOxHDV7sU=",
   "Source": "EduHome",
   "BasePath": "_content/EduHome",
   "Mode": "Default",
@@ -4267,6 +4267,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slider\\c1c15f18-2be6-4514-9de7-55845f1e856a-Library.jfif"
     },
     {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\slider\\d52d06e8-a9b9-4d0b-aab5-df9fb3e9a0e9-blog-detail.webp",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/slider/d52d06e8-a9b9-4d0b-aab5-df9fb3e9a0e9-blog-detail.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\slider\\d52d06e8-a9b9-4d0b-aab5-df9fb3e9a0e9-blog-detail.webp"
+    },
+    {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\slider\\dd7e3ecc-693e-4d8c-9c68-29eacbdbab26-Library.jfif",
       "SourceId": "EduHome",
       "SourceType": "Discovered",
@@ -4403,6 +4420,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\teacher\\53cdc1a9-0340-4217-bf9f-f58f01a8148a-teacher2.webp"
     },
     {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\teacher\\59bf2b94-c52b-446b-8d42-6b23bc15bd24-teacher2.webp",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/teacher/59bf2b94-c52b-446b-8d42-6b23bc15bd24-teacher2.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\teacher\\59bf2b94-c52b-446b-8d42-6b23bc15bd24-teacher2.webp"
+    },
+    {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\teacher\\6164ffa2-59f0-4d2b-bd97-454206d7285f-teacher1.jpg",
       "SourceId": "EduHome",
       "SourceType": "Discovered",
@@ -4452,6 +4486,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\teacher\\a53e0453-8bdb-4af0-812c-db381fb66df3-teacher2.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\teacher\\d25346ef-bb5a-4fb1-a613-6ea6b87b9dc8-teacher1.jpg",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/teacher/d25346ef-bb5a-4fb1-a613-6ea6b87b9dc8-teacher1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\teacher\\d25346ef-bb5a-4fb1-a613-6ea6b87b9dc8-teacher1.jpg"
     },
     {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\teacher\\d63302f2-973e-4c39-bbfc-841ca6cc6659-teacher1.jpg",
