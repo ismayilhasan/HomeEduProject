@@ -1,6 +1,7 @@
 ﻿using EduHome.Models.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Printing;
 
 namespace EduHome.DAL
 {
@@ -23,6 +24,8 @@ namespace EduHome.DAL
         public DbSet<Event> Events { get; set; }
         public DbSet<Speaker> Speakers { get; set; }
         public DbSet<EventSpeaker> EventSpeakers { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<ContactMessage> ContactMessages { get; set; }
 
     }
 }

@@ -31,6 +31,18 @@ namespace EduHome.Areas.Admin.Controllers
             return View(Sliders);
         }
 
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null) return NotFound();
+
+            var slider = await _dbContext.Sliders.Where(x => x.Id == id).SingleOrDefaultAsync();
+
+            if (slider.Id == null) return BadRequest();
+
+
+            return View(slider);
+        }
+
         public IActionResult Create()
         {
 

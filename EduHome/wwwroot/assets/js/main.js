@@ -140,4 +140,25 @@ $(".notice-left").niceScroll({
         });
     })
 
+    $(document).ready(function () {
+        var skip = 3;
+        $(document).on('click', '#LoadMore', function () {
+            console.log("test")
+            $.ajax({
+                method: "GET",
+                url: "/blog/partial?skip=" + skip,
+                success: function (html) {
+                   
+                    $("#blogRows").append(html);
+                    skip += 4;
+                    var productCount = $("#blogRows").val();
+                    if (skip >= productCount)
+                        $("#LoadMore").remove();
+                }
+            });
+        })
+    })
+
+ 
+
 })(jQuery);	

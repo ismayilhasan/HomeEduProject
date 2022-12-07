@@ -1,0 +1,30 @@
+﻿@model Slider
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Teacher Details</h4>
+                 <h5>Image</h5>
+                <img style="width:200px; height:100px;"  src="~/assets/img/slider/@Model.ImageUrl" />
+                <div class="form-group">
+                    <label asp-for="@Model.Title">Title</label>
+                    <input asp-for="@Model.Title" class="form-control" disabled accept="image/*">
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Subtitle">Subtitle</label>
+                    <input asp-for="@Model.Subtitle" class="form-control" disabled accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.ButtonText">Text of Button</label>
+                    <input asp-for="@Model.ButtonText" class="form-control" disabled accept="image/*">
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

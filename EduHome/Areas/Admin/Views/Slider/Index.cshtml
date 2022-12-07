@@ -24,7 +24,7 @@
                                 <tr>
                                     <td><img style="object-fit:contain; width:80px; height:80px" src="~/assets/img/slider/@slider.ImageUrl"/></td>
                                     <td>
-                                        <a class="btn btn-primary text-white">Details</a>
+                                        <a asp-controller="Slider" asp-action="details" asp-route-id="@slider.Id" class="btn btn-primary text-white">Details</a>
                                         <a asp-controller="Slider" asp-action="Update" asp-route-id="@slider.Id" class="btn btn-success text-white">Update</a>
                                         <form class="forms-sample" method="post" asp-action="Delete" asp-route-id="@slider.Id">
                                             <button type="submit" class="btn btn-danger mr-2" asp-action="Delete" asp-route-id="@slider.Id">Delete</button>

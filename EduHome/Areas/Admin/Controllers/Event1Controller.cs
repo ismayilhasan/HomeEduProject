@@ -28,6 +28,7 @@ namespace EduHome.Areas.Admin.Controllers
             return View(events);
         }
 
+    
         public async Task<IActionResult> Create()
         {
             var speaker = await _dbContext.Speakers.ToListAsync();

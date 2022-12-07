@@ -5,13 +5,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EduHome.Controllers
 {
+
     public class BlogController : Controller
     {
         private readonly AppDbContext _dbContext;
-
+        private int _blogCount;
         public BlogController(AppDbContext dbContext)
         {
             _dbContext = dbContext;
+            _blogCount = _dbContext.Blogs.Count();
         }
 
         public async Task<IActionResult> Index()
@@ -36,6 +38,14 @@ namespace EduHome.Controllers
             var blogViewModel = new BlogViewModel { Blog = blog, LatesBlogs = latesBlog };
 
             return View(blogViewModel);
+        }
+
+        public async Task<IActionResult> Partial(int skip)
+        {
+            if (skip >= _blogCount)
+                return BadRequest();
+            var blogs = await _dbContext.Blogs.Skip(skip).Take(3).ToListAsync();
+            return PartialView("_Blog", blogs);
         }
 
 
