@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Sg+BQrbYwXG7Jvv6vMSUbIjJUPizpwHR+JOZe56xHQ=",
+  "Hash": "C956LxDZWxE0rLFuyec+037wA8I87CBwHjsv5Z3BiQw=",
   "Source": "EduHome",
   "BasePath": "_content/EduHome",
   "Mode": "Default",
@@ -3043,6 +3043,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\20b24c66-fb48-4a7a-9794-eae0cb217339-blog-detail.webp"
     },
     {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\blog\\48db0bc1-381a-4e62-af94-1a3009163ce9-ic ice click .png",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/blog/48db0bc1-381a-4e62-af94-1a3009163ce9-ic ice click .png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\48db0bc1-381a-4e62-af94-1a3009163ce9-ic ice click .png"
+    },
+    {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\blog\\4f5cf196-4625-4120-a496-de1b3dafb992-teacher1.jpg",
       "SourceId": "EduHome",
       "SourceType": "Discovered",
@@ -3058,6 +3075,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\4f5cf196-4625-4120-a496-de1b3dafb992-teacher1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\blog\\76f5065e-e806-4491-a80e-b53ab7847ab3-location methods on w3school.png",
+      "SourceId": "EduHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\",
+      "BasePath": "_content/EduHome",
+      "RelativePath": "assets/img/blog/76f5065e-e806-4491-a80e-b53ab7847ab3-location methods on w3school.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\76f5065e-e806-4491-a80e-b53ab7847ab3-location methods on w3school.png"
     },
     {
       "Identity": "C:\\Users\\Ismayil Hasanov\\Desktop\\HomeEduProject\\EduHome\\wwwroot\\assets\\img\\blog\\ad93fca0-6975-440c-966e-d4094238e544-teacher2.webp",

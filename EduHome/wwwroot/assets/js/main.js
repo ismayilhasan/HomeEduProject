@@ -151,7 +151,7 @@ $(".notice-left").niceScroll({
                    
                     $("#blogRows").append(html);
                     skip += 4;
-                    var productCount = $("#blogRows").val();
+                    var productCount = $("#blogRows input").val();
                     if (skip >= productCount)
                         $("#LoadMore").remove();
                 }
