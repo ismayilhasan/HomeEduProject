@@ -45,7 +45,7 @@ namespace EduHome.Controllers
             if (skip >= _blogCount)
                 return BadRequest();
             var blogs = await _dbContext.Blogs.Skip(skip).Take(3).ToListAsync();
-            return PartialView("_Blog", blogs);
+            return PartialView("_BlogPartial", blogs);
         }
 
 
